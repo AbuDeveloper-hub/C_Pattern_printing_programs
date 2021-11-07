@@ -5,38 +5,33 @@ int main()
 {
 
     int i,j,k;
+    int num=10;
     int m=8;
-    for(i=1;i<10;i++)
+    for(i=1;i<=5;i++)
     {
-        if(i<6)
+        for(k=5;k>i;k--)
         {
-            for(j=5;j>i;j--)
-            {
-                printf(" ");
-            }
-            for(k=1;k<(i*2);k++)
-            {
-                printf("*");
-            }
-            printf("\n");
+            printf(" ");
         }
-        if(i>=6)
+        for ( j = 1; j < i*2; j++)
         {
-            
-           for(i = 1;i <= 4;i++)
-            {
-            for(j = 1;j <= i;j++)
-            {
-            printf("0");
-            }
-            for(k = i;k < m;k++)
-            {
             printf("*");
-            }
-            m-=1;
-            printf("\n");
-            }
         }
+        printf("\n");
+    }
+      
+    for(i = 1;i <= 4;i++)
+    {
+        for(j = 1;j <= i;j++)
+        {
+            printf(" ");
+        }
+        for(k = i;k < m;k++)
+        {
+            printf("*");
+        }
+         m-=1;
+         printf("\n");
     }
     return 0;
 }
